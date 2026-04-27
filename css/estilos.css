@@ -236,7 +236,7 @@ p {
 /* ============================
           768px 
 =================================*/
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   h1 {
     font-size: 2rem;
     }
@@ -249,10 +249,18 @@ p {
   p {
     font-size: 1.35rem;
   }
-  .contenedorCards {
+/*   .contenedorCards {
     width: 75%;
     margin: 20px auto;
     gap: 35px;
+  } */
+  .contenedorCards {
+    width: 100%;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+  .boxCard {
+    width: calc(50% - 19px);
   }
   /*cierra 768*/
 }
@@ -272,12 +280,7 @@ p {
   h2 {
     font-size: 1.85rem;
   }
-  .contenedorCards {
-    width: 100%;
-    flex-flow: row nowrap;
-    gap: 15px;
-  }
-
+ 
 }
 
 /*cierra 992*/
@@ -289,10 +292,13 @@ p {
 
 @media screen and (min-width:1200px) {
   .contenedorCards {
-    width: 85%;
+    width: 90%;
     margin: 20px auto;
     gap: 25px;
   }
+    .boxCard {
+      width: calc(25% - 25px);
+    }
 }
 
 /*cierra 1200*/
